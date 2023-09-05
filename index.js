@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express() 
-const port = 3099
+const port = process.env.PORT || 3099
 
 app.get('/api/projects', (req, res) => {
     const projects = ['project 1', 'project 2', 'project 3']
