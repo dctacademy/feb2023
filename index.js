@@ -15,6 +15,10 @@ app.get('/api/list/users', (req, res) => {
     res.json({users : 'listing users'})
 })
 
+app.post('/api/create/users',(req,res) =>{
+    res.json({users : 'creating the users'})
+})
+
 app.listen(port, () => {
     console.log('running on port', port)
 })
