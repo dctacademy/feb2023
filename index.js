@@ -11,6 +11,11 @@ app.get('/api/projects/total', (req, res) => {
     res.json({ total: 5})
 })
 
+
+app.post('/api/projects',(req,res)=>{
+    res.json({projects:'projects created'})
+})
+
 app.get('/api/list/users', (req, res) => {
     res.json({users : 'listing users'})
 })
@@ -18,6 +23,7 @@ app.get('/api/list/users', (req, res) => {
 app.post('/api/create/users',(req,res) =>{
     res.json({users : 'creating the users'})
 })
+
 
 app.listen(port, () => {
     console.log('running on port', port)
