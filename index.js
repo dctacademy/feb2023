@@ -11,6 +11,9 @@ app.get('/api/projects/total', (req, res) => {
     res.json({ total: 5})
 })
 
+app.post('/api/projects',(req,res)=>{
+    res.json({projects:'projects created'})
+})
 app.listen(port, () => {
     console.log('running on port', port)
 })
